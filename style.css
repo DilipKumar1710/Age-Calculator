@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: radial-gradient(rgb(232, 248, 232), rgb(202, 212, 216), rgb(248, 157, 141), rgb(248, 248, 134));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    font-size: 32px;
+    font-family: 'Caprasimo', cursive;
+    color: rgb(210, 30, 30);
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+}
+@media screen and (min-width:768px) {
+    .heading{
+        font-size: 45px;
+    }
+}
+
+.age-calculator-container{
+    width: 420px;
+    height: 380px;
+    background-image: linear-gradient(rgb(118, 207, 237), rgb(241, 136, 151), rgb(241, 241, 104), rgb(135, 216, 135));
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media screen and (max-width:767px) {
+    .age-calculator-container{
+        width: 320px;
+        height: 350px;
+    }
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    
+}
+
+.date-of-birth{
+    font-family: 'Caprasimo', cursive;
+    font-size: 15px;
+    color: crimson;
+}   
+@media screen and (max-width:767px) {
+    .date-of-birth{
+        font-size: 12px;
+    }
+}
+
+.input-date{
+    margin-top: 10px;
+    height: 35px;
+    padding-left: 5px;
+    width: 35%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: rgb(5, 5, 171);
+    letter-spacing: 1.2px;
+}
+
+@media screen and (max-width:767px) {
+    .input-date{
+        height: 30px;
+        font-size: 11px;
+    }
+}
+
+.age-calculation-details-container{
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+.age-details{
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: rgb(54, 55, 56);
+    list-style-type: square;
+}
+
+@media screen and (max-width:767px) {
+    .age-details{
+        font-size: 14px;
+    }
+}
+
+.btns-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.button{
+    height: 40px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: blue;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 600;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.age-digit{
+    color: rgb(0, 0, 255);
+    font-size: 20px;
+}
+@media screen and (max-width:767px) {
+    .age-digit{
+        font-size: 15px;
+    }
+}
